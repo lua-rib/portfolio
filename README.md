@@ -24,4 +24,6 @@ Neste projeto, eu:
 - Trabalhei com design responsivo utilizando media queries.
 - Implementei boas práticas de design com foco na organização e reutilização de estilos.
 - Experimentei a integração de links para redes sociais e imagens.
-
+  
+**Você pode acessar o projeto online clicando no link abaixo:**
+👉 [Alura Plus - Live Demo](https://portfolio-ten-brown-82.vercel.app/)
