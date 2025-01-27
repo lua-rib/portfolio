@@ -26,4 +26,4 @@ Neste projeto, eu:
 - Experimentei a integração de links para redes sociais e imagens.
   
 **Você pode acessar o projeto online clicando no link abaixo:**
-👉 [Alura Plus - Live Demo](https://portfolio-ten-brown-82.vercel.app/)
+👉 [Portfólio - Live Demo](https://portfolio-ten-brown-82.vercel.app/)
