@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #283739;
+    --cor-primaria: #000;
     --cor-secundaria: #F5F5F5;
-    --cor-terciaria: #A9C52F;
-    --cor-quarteneria: #2C5D63;
-    --cor-hover: #2C5D63;
+    --cor-terciaria: #7e3f71;
+    --cor-quarteneria: #7e3f71;
+    --cor-hover: #7e3f71;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -17,7 +17,7 @@
     padding: 0;
 }
 body {
-    background-color: var(--cor-primaria);
+    background: linear-gradient(to bottom, #ff97d7, #04214b);
     color: var(--cor-secundaria);
     box-sizing: border-box;
 }
@@ -189,6 +189,15 @@ body {
     width: 50%;
 }
 
+address{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px; 
+    font-size: 0.875rem;
+    width: auto; 
+    display: inline-block;
+    text-align: center;
+}
 .educacao__relevante {
     color:var(--cor-secundaria);
     border-radius: 10px;
@@ -267,13 +276,13 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-       padding: 10% 
+       padding: 10%; 
     }
 
     .cabecalho__menu {
-    justify-content: center;
+        justify-content: center;
+    }
 
-}
     .apresentacao {
         flex-direction: column-reverse;    
         padding: 5%;    
@@ -285,15 +294,13 @@ body {
 
     .dados_pessoais {
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin: 0 auto;
         height: auto;
     }
 
     .minha__foto {
         width: 70%;
-        margin: auto;
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
 
     .educacao__relevante,
@@ -301,8 +308,7 @@ body {
     .habilidades__relevantes,
     .cursos__importantes {
         width: 80%;
-        margin: auto;
-        margin-top: 15px;
+        margin: 15px auto;
     }
 
     .formacao,
@@ -319,3 +325,64 @@ body {
     }
 }
 
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .minha__foto {
+        width: 60%;
+    }
+
+    .dados_pessoais,
+    .educacao__relevante,
+    .experiencia__relevante,
+    .habilidades__relevantes,
+    .cursos__importantes {
+        width: 90%;
+    }
+
+    .resumo {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 3%;
+        font-size: 0.9rem;
+    }
+
+    .apresentacao {
+        padding: 3%;
+    }
+
+    .minha__foto {
+        width: 80%;
+    }
+
+    .dados_pessoais,
+    .educacao__relevante,
+    .experiencia__relevante,
+    .habilidades__relevantes,
+    .cursos__importantes {
+        width: 95%;
+    }
+
+    .resumo {
+        font-size: 0.9rem;
+    }
+}
