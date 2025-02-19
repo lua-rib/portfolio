@@ -22,6 +22,8 @@ body {
     box-sizing: border-box;
 }
 
+/*header*/
+
 .cabecalho {
     padding: 2% 0% 0% 15%;
 }
@@ -38,6 +40,11 @@ body {
     color: var(--cor-terciaria);
     text-decoration: none;
 }
+.cabecalho__menu__link:hover {
+    transform: translateY(-5px);
+}
+
+/*main perfil*/
 
 .apresentacao {
     padding: 5% 15%;
@@ -102,6 +109,8 @@ body {
     background-color: var(--cor-hover);
 }
 
+/*footer perfil*/
+
 .rodape {
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -111,6 +120,8 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+/*curriculo*/
 
 .curriculo {
     display: flex;
@@ -273,6 +284,83 @@ address{
     background-color: var(--cor-quarteneria);
     color: var(--cor-secundaria);
 }
+/*projetos*/
+
+.projetos__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 90px;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.projetos__content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projeto__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+}
+
+.projeto__midia {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.img__projeto {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.projetos__content:hover {
+    transform: translateY(-25px);
+}
+
+.projetos__container .apresentacao__conteudo__titulo {
+    text-align: center;
+}
+
+.projeto__sobre {
+    
+}
+
+.projetos__content .projeto__sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.ver__projeto {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--cor-terciaria);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.ver__projeto:hover {
+    background-color: rgb(178, 141, 147);
+}
+
+/*responsividade*/
 
 @media (max-width: 1200px) {
     .cabecalho {
